@@ -4,7 +4,7 @@ setuptools
 # Test dependencies
 pytest
 
-# ROS 2 dependencies such as rclpy and std_msgs are installed through the ROS 2 distribution.
+# ROS 2 dependencies such as rclpy and sensor_msgs are installed through the ROS 2 distribution.
 
 # For detection
 opencv-python
