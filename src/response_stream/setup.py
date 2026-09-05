@@ -19,8 +19,13 @@ setup(
             ['package.xml']
         ),
     ],
+    scripts=['stream_subscriber'],
 
-    install_requires=['setuptools'],
+    install_requires=[
+        'setuptools',
+        'opencv-python',
+        'ultralytics',
+    ],
     zip_safe=True,
 
     maintainer='ismail',
@@ -35,9 +40,4 @@ setup(
         ],
     },
 
-    entry_points={
-        'console_scripts': [
-            'stream_subscriber = response_stream.stream_subs:main',
-        ],
-    },
 )

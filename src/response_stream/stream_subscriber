@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if [ -n "${VIRTUAL_ENV:-}" ] && [ -x "$VIRTUAL_ENV/bin/python" ]; then
+    python="$VIRTUAL_ENV/bin/python"
+else
+    python=python3
+fi
+
+exec "$python" -m response_stream.stream_subs "$@"
